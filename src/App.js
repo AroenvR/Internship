@@ -8,6 +8,8 @@ import Header from './components/Header';
 import FrontPage from './components/FrontPage';
 import InternshipReports from './components/InternshipReports';
 
+// Note to self: When pushing new code, remember to execute npm run deploy to update the gh-pages branch.
+
 function App() {
   const [page, setPage] = useState(0); // Hook used to set current 'page' value.
   localStorage.setItem('current-page', page); // Setting global variable for other components.
