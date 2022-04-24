@@ -21,7 +21,7 @@ const Header = () => {
 
             <div id='content'>
                 <p>Stagiaire:&nbsp;<img src={signature} alt="Signature Aroen van Remmen"></img></p>
-                <a href='https://github.com/AroenvR/Internship-Code' target="_blank" rel="noreferrer">github.com/AroenvR/Internship-Code</a>
+                <a href='https://github.com/AroenvR/Internship-Code' target="_blank" rel="noreferrer">github.com/AroenvR/Internship</a>
             </div>
         </div>
     );
