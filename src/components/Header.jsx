@@ -16,7 +16,7 @@ const Header = () => {
 
     return (
         <div id='header'>
-            {/* <h1>Stageverslag</h1> */}
+            <h1>Stageverslag</h1>
             <h2>Week van de <strong>{ headerDate }</strong></h2>
 
             <div id='content'>
