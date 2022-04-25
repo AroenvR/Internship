@@ -47,7 +47,7 @@ export const reports =
     {
         dateString: "28e maart",
         summary: [
-            "Mijn stagementors, Mr. Bosteels en Mr. Loos, waren naar Estland voor een conferentie, dus ik heb de hele week zelfstandig gewerkt.",
+            "Ik heb deze week merendeels week zelfstandig gewerkt.",
             "Actief gezocht naar bugs en warnings/errors, om PA-14848 (warning / error cleanup story) af te werken. Zo veel mogelijk onnodige en outdated libraries verwijderd en zelf CSS toegepast voor pagina stabiliteit.",
             "Vroeger klaar met mijn gegeven stories dan geschat, dus heb ik (na goedkeuring) zelf 2 nieuwe stories aangemaakt om de werking van het systeem te verbeteren en versnellen, waarvan ik één al af heb kunnen werken (PA-14911, speed up search results).",
             "PA-14911 moet nog reviewed worden voordat het op productie getest kan worden, maar in theorie zou het de search resultaten moeten versnellen van ~30 seconden naar een paar seconden.",
@@ -168,39 +168,35 @@ export const reports =
     {
         dateString: "18e april",
         summary: [
-            "lorem",
-            "lorem",
+            "Deze week begonnen met een nieuw database model te maken (2nd prototype SQL-script). <br/>Tot nu toe is het tweede script goedgekeurd en hebben we nog geen problemen gevonden.",
             "Al mijn code is gedocumenteerd waar nuttig."     
         ],
         jiraStories: {
             finished: [
-                "PA-???"
+                "PA-15000 (UI improvements)",
+                "PA-15047 (Clean CSS file), Sass toegevoegd.",
+                "PA-14955 (Database onderdeel van PA-13877), onder voorbehoud.",
             ],
-            started: [
-                "PA-???"
-            ]
         },
         tableContent: {
             good: [
-                "lorem"
+                "Geen echte problemen gehad deze week, dus de week in z’n geheel is goed gegaan."
             ],
             learned: [
-                "lorem"
+                "Ik heb ondervonden dat ik toch meer plezier vind in frontend dan backend. <br/>Dit vond ik interessant want ik dacht altijd dat frontend niets voor mij zou zijn."
             ],
             targets: [
-                "lorem"
+                "Volgende week begin ik aan de backend van PA-13877 dus wil ik het zo ver mogelijk afkrijgen.",
+                "Op de 28e is er een deadline gesteld voor een full .be crawl. <br/>Hopelijk zullen mijn aanpassingen af zijn tegen deze deadline maar ik twijfel hier persoonlijk aan."
             ],
             goals: [
-                "lorem"
-            ],
-            problems: [
-                "lorem"
+                "PA-13877 afwerken."
             ],
             lookingForward: [
-                "lorem"
+                "Nog eens te kunnen lunchen met mijn collega student Dulce. <br/>Zij is al eventjes niet meer naar het kantoor kunnen komen, maar volgende week zou ze er terug moeten zijn."
             ],
             extra: [
-                "lorem"
+                "SQL Scripts: https://github.com/AroenvR/Internship-Code/tree/master/sql_scripts"
             ]
         }
     }
