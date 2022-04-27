@@ -51,7 +51,7 @@ export const reports =
             "Ik heb deze week merendeels week zelfstandig gewerkt.",
             "Actief gezocht naar bugs en warnings/errors, om PA-14848 (warning / error cleanup story) af te werken. Zo veel mogelijk onnodige en outdated libraries verwijderd en zelf CSS toegepast voor pagina stabiliteit.",
             "Vroeger klaar met mijn gegeven stories dan geschat, dus heb ik (na goedkeuring) zelf 2 nieuwe stories aangemaakt om de werking van het systeem te verbeteren en versnellen, waarvan ik één al af heb kunnen werken (PA-14911, speed up search results).",
-            "PA-14911 moet nog reviewed worden voordat het op productie getest kan worden, maar in theorie zou het de search resultaten moeten versnellen van ~30 seconden naar een paar seconden.",
+            "PA-14911 moet nog reviewed worden voordat het op productie getest kan worden, maar in theorie zou het de search resultaten moeten versnellen van ~30 seconden naar een paar seconden of minder.",
             "Eerste keer een standup meeting geleid.",
             "Al mijn code is gedocumenteerd waar nuttig."
         ],
@@ -124,6 +124,7 @@ export const reports =
                 "Ik kijk uit naar de vele uitdagingen die mij volgende week staan te wachten."
             ],
             extra: [
+                "PA-14911 (speed up search results) is inmiddels deployed op production en de results zijn nu binnen één seconde geladen.",
                 "If you don’t know Hans Zimmer, check out his music. <br/>You’ve probably already heard a lot of his music without realizing. <br/>You won’t regret it."
             ]
         }
@@ -161,7 +162,7 @@ export const reports =
                 "Een van mijn slechtere punten te kunnen beoefenen."
             ],
             extra: [
-                "Scripts can be found at: github.com/AroenvR/Internship-Code"
+                "SQL Scripts: https://github.com/AroenvR/Internship-Code/tree/master/sql_scripts"
             ]
         }
     },
