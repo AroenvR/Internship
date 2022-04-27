@@ -39,7 +39,8 @@ export const reports =
                 "Ik kijk ernaar uit om in de backend te kunnen helpen."
             ],
             extra: [
-                "Een zeer interessante eerste week, waar ik direct lessen kreeg over hoe een DNS werkt."
+                "Een zeer interessante eerste week, waar ik direct lessen kreeg over hoe een DNS werkt.",
+                "Om de ternaire functies en mijn oplossingen te zien: <br/>https://github.com/AroenvR/Internship-Code/tree/master/difficult_ternaries"
             ]
         }
     },
