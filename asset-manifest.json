@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Internship/static/css/main.9cc5aaf2.css",
-    "main.js": "/Internship/static/js/main.40c39022.js",
+    "main.css": "/Internship/static/css/main.0158233f.css",
+    "main.js": "/Internship/static/js/main.5d40da2a.js",
     "static/media/DNS_logo.png": "/Internship/static/media/DNS_logo.1a5b2a971e13f76839e5.png",
     "static/media/UCLL_logo.png": "/Internship/static/media/UCLL_logo.7e0a4f40140ed67ffad9.png",
     "static/media/Signature.png": "/Internship/static/media/Signature.4531001169c5cc6ef871.png",
     "index.html": "/Internship/index.html",
-    "main.9cc5aaf2.css.map": "/Internship/static/css/main.9cc5aaf2.css.map",
-    "main.40c39022.js.map": "/Internship/static/js/main.40c39022.js.map"
+    "main.0158233f.css.map": "/Internship/static/css/main.0158233f.css.map",
+    "main.5d40da2a.js.map": "/Internship/static/js/main.5d40da2a.js.map"
   },
   "entrypoints": [
-    "static/css/main.9cc5aaf2.css",
-    "static/js/main.40c39022.js"
+    "static/css/main.0158233f.css",
+    "static/js/main.5d40da2a.js"
   ]
 }
