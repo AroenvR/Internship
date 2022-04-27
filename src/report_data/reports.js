@@ -48,7 +48,7 @@ export const reports =
     {
         dateString: "28e maart",
         summary: [
-            "Ik heb deze week merendeels week zelfstandig gewerkt.",
+            "Ik heb deze week merendeels zelfstandig gewerkt.",
             "Actief gezocht naar bugs en warnings/errors, om PA-14848 (warning / error cleanup story) af te werken. <br/>Zo veel mogelijk onnodige en outdated libraries verwijderd en zelf CSS toegepast voor pagina stabiliteit.",
             "Vroeger klaar met mijn gegeven stories dan geschat, dus heb ik (na goedkeuring) zelf 2 nieuwe stories aangemaakt om de werking van het systeem te verbeteren en versnellen, waarvan ik één al af heb kunnen werken (PA-14911 speed up search results).",
             "PA-14911 moet nog reviewed worden voordat het op productie getest kan worden, maar in theorie zou het de search resultaten moeten versnellen van ~30 seconden naar een paar seconden of minder.",
@@ -141,7 +141,7 @@ export const reports =
         ],
         jiraStories: {
             started: [
-                "PA-14955 (sub-task van PA-13877, database onderdeel)"
+                "PA-14955 (de database sub-task van PA-13877)"
             ]
         },
         tableContent: {
@@ -157,7 +157,7 @@ export const reports =
             ],
             problems: [
                 "Database designing.",
-                "Ik verlies snel het oog op relaties en cardinaliteit. <br/>Hierdoor wil ik snel grijpen naar meer tabellen wat inefficiënt is."
+                "Ik verlies soms het oog op relaties en cardinaliteit. <br/>Hierdoor wil ik snel grijpen naar meer tabellen wat inefficiënt is."
             ],
             lookingForward: [
                 "Een van mijn slechtere punten te kunnen beoefenen."
