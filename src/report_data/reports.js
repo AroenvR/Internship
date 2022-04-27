@@ -49,8 +49,8 @@ export const reports =
         dateString: "28e maart",
         summary: [
             "Ik heb deze week merendeels week zelfstandig gewerkt.",
-            "Actief gezocht naar bugs en warnings/errors, om PA-14848 (warning / error cleanup story) af te werken. Zo veel mogelijk onnodige en outdated libraries verwijderd en zelf CSS toegepast voor pagina stabiliteit.",
-            "Vroeger klaar met mijn gegeven stories dan geschat, dus heb ik (na goedkeuring) zelf 2 nieuwe stories aangemaakt om de werking van het systeem te verbeteren en versnellen, waarvan ik één al af heb kunnen werken (PA-14911, speed up search results).",
+            "Actief gezocht naar bugs en warnings/errors, om PA-14848 (warning / error cleanup story) af te werken. <br/>Zo veel mogelijk onnodige en outdated libraries verwijderd en zelf CSS toegepast voor pagina stabiliteit.",
+            "Vroeger klaar met mijn gegeven stories dan geschat, dus heb ik (na goedkeuring) zelf 2 nieuwe stories aangemaakt om de werking van het systeem te verbeteren en versnellen, waarvan ik één al af heb kunnen werken (PA-14911 speed up search results).",
             "PA-14911 moet nog reviewed worden voordat het op productie getest kan worden, maar in theorie zou het de search resultaten moeten versnellen van ~30 seconden naar een paar seconden of minder.",
             "Eerste keer een standup meeting geleid.",
             "Al mijn code is gedocumenteerd waar nuttig."
@@ -64,9 +64,9 @@ export const reports =
         },
         tableContent: {
             good: [
-                "Ik had nog 1 dag over van de week waar ik vrijheid kreeg, dus ben ik naar de backend gekeerd om het systeem te versnellen (PA-14911, nog niet reviewed). Dit heeft ook wat aanpassingen in de front-end gevraagd, waardoor er een vermindering (verbeterde efficiëntie) in code is.",
-                "De snelheid van programmeren. Ik heb meer verwerkt dan ik persoonlijk had verwacht. Zeer bevredigend.",
-                "Deze week heb ik maar 1 van de vele meetings gemist. Een begin, maar nog niet goed genoeg. Bij meetings die ik niet heb gemist, was ik altijd op tijd."
+                "Ik had nog 1 dag over van de week waar ik vrijheid kreeg, dus ben ik naar de backend gekeerd om het systeem te versnellen (PA-14911, nog niet reviewed). <br/>Dit heeft ook wat aanpassingen in de front-end gevraagd, waardoor er een vermindering (verbeterde efficiëntie) in code is.",
+                "De snelheid van programmeren. <br/>Ik heb meer verwerkt dan ik persoonlijk had verwacht. Zeer bevredigend.",
+                "Deze week heb ik maar 1 van de vele meetings gemist. <br/>Een begin, maar nog niet goed genoeg. Bij meetings die ik niet heb gemist, was ik altijd op tijd."
             ],
             learned: [
                 "Veel meer geavanceerde Java-code gezien dan in de lessen van UCLL. "
@@ -79,14 +79,15 @@ export const reports =
                 "Meer geavanceerde Java-code leren zodat ik sneller en efficiënter kan werken."
             ],
             problems: [
-                "Veel geavanceerde code dat ik nog niet kende, waar ik zeker een tijdje op vast zat. Google en Johan Heylen hebben mij hierbij geholpen."
+                "Veel geavanceerde code dat ik nog niet kende, waar ik zeker een tijdje op vast zat. <br/>Google en Johan Heylen hebben mij hierbij geholpen."
             ],
             lookingForward: [
                 "PA-14911 op productie testen om te zien hoeveel sneller de resultaten nu binnenkomen.",
-                "Te beginnen aan een nieuw onderdeel van de Web Crawler en PA-14912 (add paging, zelfgemaakte en goedgekeurde story) te maken. Voor PA-14912 moet ik in beide de backend en front-end code leren dat ik nog niet ken."
+                "Te beginnen aan een nieuw onderdeel van de Web Crawler en PA-14912 (add paging, zelfgemaakte en goedgekeurde story) te maken. <br/>Voor PA-14912 moet ik in beide de backend en front-end code leren dat ik nog niet ken."
             ],
             extra: [
-                "Hoe ik PA-14911 (speed up search results) heb aangepakt: De vorige front-end developer deed 2 verschillende API-calls voor data in een HTML-table te tonen. De tabel moet de volgende elementen bevatten: VisitId, TimeStamp, FinalUrl, 4 booleans. Er werd 1 call gedaan om een lijst van VisitId’s, TimeStamps en FinalUrls te verkrijgen. De FinalUrl was foutieve data. Daarna werd een reeks API calls gedaan naar de backend met een foreach VisitId -> get booleans. Ik heb het aangepast zodat de front-end maar 1 call doet en een list van DTO’s ontvangt. Iedere DTO bevat: VisitId, TimeStamp, (juiste) FinalUrl en alle 4 booleans. Dit veroorzaakt een drastische vermindering in internet traffic, wat hopelijk zorgt voor versnelling. (Review and deploy pending). Ik kijk uit naar de resultaten van mijn aanpassingen. Toekomstige uitbreiding voor nog meer versnelling is een paginering system (PA-14912) via gebruik van batches."
+                "Hoe ik PA-14911 (speed up search results) heb aangepakt: <br/><br/>De vorige front-end developer deed 2 verschillende API-calls voor data in een HTML-table te tonen. <br/><br/>De tabel moet de volgende elementen bevatten: VisitId, TimeStamp, FinalUrl, 4 booleans. <br/><br/>Er werd 1 call gedaan om een lijst van VisitId’s, TimeStamps en FinalUrls te verkrijgen. <br/>De FinalUrl was foutieve data. <br/><br/>Daarna werd een reeks API calls gedaan naar de backend met een foreach VisitId get 4 booleans, 1 at a time. <br/><br/>Ik heb het aangepast zodat de front-end maar 1 call doet en dan een lijst van DTO’s ontvangt. <br/><br/>Iedere DTO bevat: VisitId, TimeStamp, (juiste) FinalUrl en alle 4 booleans. <br/><br/>Dit veroorzaakt een drastische vermindering in internet traffic, wat hopelijk zorgt voor versnelling. <br/>(Review and deploy pending).", 
+                "Ik kijk uit naar de resultaten van mijn aanpassingen. <br/>Toekomstige uitbreiding voor nog meer versnelling is een paginering system (PA-14912) via gebruik van Spring Paging."
             ]
         }
     },
