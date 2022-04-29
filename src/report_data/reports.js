@@ -1,4 +1,5 @@
 // TODO: Update this to an actual file / backend.
+// TODO: Update links to be links.
 
 // Line breaks are tagged as HTML <br/> elements since \n gets ignored.
 export const reports =
@@ -209,14 +210,14 @@ export const reports =
     {
         dateString: "25e april",
         summary: [
-            "Zeer interessante week. <br.>Veel bijgeleerd over Docker containers en aan compleet andere code gewerkt dan ik gewend ben van WebApps.",
+            "Zeer interessante week. <br.>Veel bijgeleerd over Docker containers en aan compleet andere code gewerkt dan ik gewend ben voor WebApps.",
             "Nadat het database model goed gekeurd was en geen problemen meer had, heb ik een paar dagen gewerkt aan de crawl service (van crawl naar database opslagen).",
-            "Voor zeker te zijn dat ik geen grote bugs had heb ik een paar dagen geïnvesteerd in het maken van Unit en Integration tests voor mijn nieuwe repositories.",
-            "Zodra de crawl service layer en zijn tests af waren was de rest vrijwel meteen opgelost aangezien ik dan enkel nog van repo to frontend moest maken. <br/>Iets dat mij zeer comfortabel is om te maken."
+            "Voor zeker te zijn dat ik geen grote bugs had heb ik een paar dagen geïnvesteerd in het maken van Unit en Integration tests voor mijn nieuwe repositories en de aangepaste crawl service.",
+            "Zodra de crawl service layer en zijn tests af waren was de rest vrijwel meteen opgelost aangezien ik dan nog enkel van repo to frontend moest maken. <br/>Iets dat mij zeer comfortabel is om te maken."
         ],
         jiraStories: {
             finished: [
-                "PA-14955 (Create better datamodel), still need to check for bugs"
+                "PA-14955 (Create better datamodel)"
             ],
         },
         tableContent: {
@@ -244,4 +245,3 @@ export const reports =
 ]
 
 export const amtOfReports = reports.length;
-//https://github.com/AroenvR/Internship-Code/tree/master/crawlDto_construction
