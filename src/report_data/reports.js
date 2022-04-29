@@ -1,3 +1,5 @@
+// TODO: Update this to an actual file / backend.
+
 // Line breaks are tagged as HTML <br/> elements since \n gets ignored.
 export const reports =
 [
@@ -202,7 +204,44 @@ export const reports =
                 "SQL Scripts: https://github.com/AroenvR/Internship-Code/tree/master/sql_scripts"
             ]
         }
+    },
+
+    {
+        dateString: "25e april",
+        summary: [
+            "Zeer interessante week. <br.>Veel bijgeleerd over Docker containers en aan compleet andere code gewerkt dan ik gewend ben van WebApps.",
+            "Nadat het database model goed gekeurd was en geen problemen meer had, heb ik een paar dagen gewerkt aan de crawl service (van crawl naar database opslagen).",
+            "Voor zeker te zijn dat ik geen grote bugs had heb ik een paar dagen geïnvesteerd in het maken van Unit en Integration tests voor mijn nieuwe repositories.",
+            "Zodra de crawl service layer en zijn tests af waren was de rest vrijwel meteen opgelost aangezien ik dan enkel nog van repo to frontend moest maken. <br/>Iets dat mij zeer comfortabel is om te maken."
+        ],
+        jiraStories: {
+            finished: [
+                "PA-14955 (Create better datamodel), still need to check for bugs"
+            ],
+        },
+        tableContent: {
+            good: [
+                "Veel te doen gehad deze week dus ze is vrij snel voorbij gegaan. <br/>'Time flies when you're having fun.'"
+            ],
+            learned: [
+                "De werking van Flyway leren kennen, een gemakkelijk te gebruiken migrations library."
+            ],
+            targets: [
+                "Volgende week zo veel mogelijk bugs opsporen & opkuisen.",
+                "Daarna beginnen aan hosting data toe te voegen (de originele story)"
+            ],
+            problems: [
+                "Docker. <br/>Vrij lang zitten sukkelen aan Docker containers, de juiste online te zetten en de juiste te rebuilden."
+            ],
+            lookingForward: [
+                "Verder werken aan de hosting data story."
+            ],
+            extra: [
+                "DnsCrawlDTO constructie: <br/>https://github.com/AroenvR/Internship-Code/tree/master/crawlDto_construction"
+            ]
+        }
     }
 ]
 
 export const amtOfReports = reports.length;
+//https://github.com/AroenvR/Internship-Code/tree/master/crawlDto_construction
