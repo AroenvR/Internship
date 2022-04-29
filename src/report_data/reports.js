@@ -211,9 +211,9 @@ export const reports =
         dateString: "25e april",
         summary: [
             "Zeer interessante week. <br.>Veel bijgeleerd over Docker containers en aan compleet andere code gewerkt dan ik gewend ben voor WebApps.",
-            "Nadat het database model goed gekeurd was en geen problemen meer had, heb ik een paar dagen gewerkt aan de crawl service (van crawl naar database opslagen).",
-            "Voor zeker te zijn dat ik geen grote bugs had heb ik een paar dagen geïnvesteerd in het maken van Unit en Integration tests voor mijn nieuwe repositories en de aangepaste crawl service.",
-            "Zodra de crawl service layer en zijn tests af waren was de rest vrijwel meteen opgelost aangezien ik dan nog enkel van repo to frontend moest maken. <br/>Iets dat mij zeer comfortabel is om te maken.",
+            "Nadat het database model goed gekeurd was en geen problemen meer had, heb ik een paar dagen gewerkt aan de crawl service (van crawl naar nieuw database model).",
+            "Voor zeker te zijn dat ik geen grote bugs heb gecreërd, heb ik een paar dagen geïnvesteerd in het maken van Unit en Integration tests voor de nieuwe repositories en aangepaste crawl service.",
+            "Zodra de crawl service en zijn tests af waren was de rest vrijwel meteen opgelost aangezien ik dan nog enkel van repo to frontend moest maken. <br/>Iets dat mij zeer comfortabel is om te maken.",
             "Voor de nieuwe crawl data naar de frontend te sturen heb ik een interessante DTO constructie gemaakt met meerdere nested maps zodat er weinig aanpassing nodig was in de frontend code. <br/>Ik had het bekeken als een 'coding challenge' dus daar heb ik wel van genoten."
         ],
         jiraStories: {
