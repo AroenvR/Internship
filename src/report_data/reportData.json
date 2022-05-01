@@ -1,0 +1,20 @@
+{
+    "deployment": {
+        "address": "0x77f3fA39191ef9A9dd979876802Af4aCBC86e9e1"
+    },
+    "abi": [
+        {
+            "inputs": [],
+            "name": "viewString",
+            "outputs": [
+                {
+                    "internalType": "string",
+                    "name": "",
+                    "type": "string"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        }
+    ]
+}
