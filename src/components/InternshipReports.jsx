@@ -1,7 +1,3 @@
-import { useEffect, useState } from 'react';
-
-// import { reports } from '../report_data/reports';
-
 import Report from './reports/Report';
 import ReportTable from './reports/ReportTable';
 
