@@ -8,7 +8,7 @@ const Report = (props) => {
     const renderSummary = () => {       
         const summary = props.data.summary;
 
-        if (summary === undefined) return (<p>Something went wrong.</p>);
+        if (summary[0] === "") return (<p>Something went wrong.</p>);
         
         return summary.map((data, index) => {
             return (
@@ -24,7 +24,7 @@ const Report = (props) => {
     const renderFinishedStories = () => {
         const finished = props.data.finished;
 
-        if (finished === undefined) return;
+        if (finished[0] === "") return;
 
         return (
             <>
@@ -47,7 +47,7 @@ const Report = (props) => {
     const renderStartedStories = () => {
         const started = props.data.started;
 
-        if (started === undefined) return;
+        if (started[0] === "") return;
 
         return (
             <>
