@@ -11,10 +11,8 @@ def get_account():
 def deploy_report_data():
     account = get_account() # returns account's public key.
     report_data_contract = ReportData.deploy({"from": account}) # returns contract's public address.
-    print("report_data_contract address: ")
-    print(report_data_contract)
-    # report_data_contract.updateReports() # I'm stuck here.
-
+    update_reports_transaction = report_data_contract.updateReports({"from": account}) # I'm stuck here.
+    update_reports_transaction.wait(1) # Amount of blocks I'm willing to wait for.
 
 def main():
     deploy_report_data()

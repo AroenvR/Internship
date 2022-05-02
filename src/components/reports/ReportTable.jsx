@@ -21,7 +21,8 @@ const ReportTable = (props) => {
     // Renders a given string to the left of the table with the data on the right.
     // Data is first checked before rendering so the table row will not exist if the data is unidentified / null.
     const renderTableRow = (tableTitle, tableData) => {
-        if (tableData === undefined) return;
+        console.log(tableData);
+        if (tableData[0] === "") return;
 
         return (
             <tr>
@@ -45,31 +46,31 @@ const ReportTable = (props) => {
             <table>
                 <tbody>
                     { 
-                        renderTableRow('Wat ging er goed:', props.data.tableContent.good) 
+                        renderTableRow('Wat ging er goed:', props.data.good)
                     }
 
                     {
-                        renderTableRow("Wat heb ik bijgeleerd", props.data.tableContent.learned)
+                        renderTableRow("Wat heb ik bijgeleerd", props.data.learned)
                     }
 
                     {
-                        renderTableRow("Streefdoelen voor volgende week:", props.data.tableContent.targets)
+                        renderTableRow("Streefdoelen voor volgende week:", props.data.targets)
                     }
                     
                     {
-                        renderTableRow("Algemene doelen:", props.data.tableContent.goals)
+                        renderTableRow("Algemene doelen:", props.data.goals)
                     }
                     
                     {
-                        renderTableRow("Problemen & Uitdagingen:", props.data.tableContent.problems)
+                        renderTableRow("Problemen & Uitdagingen:", props.data.problems)
                     }
 
                     {
-                        renderTableRow("Ik kijk uit naar:", props.data.tableContent.lookingForward)
+                        renderTableRow("Ik kijk uit naar:", props.data.lookingForward)
                     }
                     
                     {
-                        renderTableRow("Extra informatie:", props.data.tableContent.extra)
+                        renderTableRow("Extra informatie:", props.data.extra)
                     }
                 </tbody>
             </table>

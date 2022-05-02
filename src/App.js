@@ -15,6 +15,7 @@ import InternshipReports from './components/InternshipReports';
 
 function App() {
   const [page, setPage] = useState(0); // Hook used to set current 'page' value.
+  const [data, setData] = useState(null);
   localStorage.setItem('current-page', page); // Setting global variable for other components.
 
   useEffect(() => {
@@ -26,8 +27,8 @@ function App() {
       const web3Provider = new ethers.providers.Web3Provider(window.ethereum);
       const reportDataContract = new ethers.Contract(contractAddress, contractABI, web3Provider);
 
-      const reply = await reportDataContract.viewString();
-      console.log(reply);
+      const reply = await reportDataContract.viewReports();
+      setData(reply);
     }
 
     callSmartContract();
@@ -39,7 +40,7 @@ function App() {
       return (
         <Fragment>
             <Header />
-            <InternshipReports />
+            <InternshipReports data={data} />
         </Fragment>
       );
     }

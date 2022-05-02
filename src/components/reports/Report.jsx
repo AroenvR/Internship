@@ -22,7 +22,7 @@ const Report = (props) => {
     }
 
     const renderFinishedStories = () => {
-        const finished = props.data.jiraStories.finished;
+        const finished = props.data.finished;
 
         if (finished === undefined) return;
 
@@ -45,7 +45,7 @@ const Report = (props) => {
     }
 
     const renderStartedStories = () => {
-        const started = props.data.jiraStories.started;
+        const started = props.data.started;
 
         if (started === undefined) return;
 
