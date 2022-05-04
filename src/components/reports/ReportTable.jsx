@@ -1,3 +1,5 @@
+import { checkForFalsy } from "../Util";
+
 const ReportTable = (props) => {
 
     // About dangerouslySetInnerHTML={{ __html: data }}
@@ -21,7 +23,7 @@ const ReportTable = (props) => {
     // Renders a given string to the left of the table with the data on the right.
     // Data is first checked before rendering so the table row will not exist if the data is unidentified / null.
     const renderTableRow = (tableTitle, tableData) => {
-        if (tableData[0] === "") return;
+        if (checkForFalsy(tableData)) return;
 
         return (
             <tr>

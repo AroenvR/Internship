@@ -1,3 +1,5 @@
+import { checkForFalsy } from "../Util";
+
 const Report = (props) => {
 
     // About dangerouslySetInnerHTML={{ __html: data }}
@@ -8,7 +10,7 @@ const Report = (props) => {
     const renderSummary = () => {       
         const summary = props.data.summary;
 
-        if (summary[0] === "") return (<p>Something went wrong.</p>);
+        if (checkForFalsy(summary)) return (<p>Something went wrong.</p>);
         
         return summary.map((data, index) => {
             return (
@@ -24,7 +26,7 @@ const Report = (props) => {
     const renderFinishedStories = () => {
         const finished = props.data.finished;
 
-        if (finished[0] === "") return;
+        if (checkForFalsy(finished)) return;
 
         return (
             <>
@@ -47,7 +49,7 @@ const Report = (props) => {
     const renderStartedStories = () => {
         const started = props.data.started;
 
-        if (started[0] === "") return;
+        if (checkForFalsy(started)) return;
 
         return (
             <>
