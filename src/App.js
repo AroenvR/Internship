@@ -4,6 +4,7 @@ import { ethers } from "ethers";
 
 import './App.scss';
 import reportData from './report_data/reportData.json';
+import { reports } from './report_data/reports';
 
 import TopElements from './components/TopElements';
 import Header from './components/Header';
@@ -28,7 +29,12 @@ function App() {
       const reportDataContract = new ethers.Contract(contractAddress, contractABI, web3Provider);
 
       const reply = await reportDataContract.viewReports();
-      setData(reply);
+
+      if (!reply) {
+        setData(reports)
+      } else {
+        setData(reply);
+      }
     }
 
     callSmartContract();
