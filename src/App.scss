@@ -290,6 +290,8 @@ body {
     margin: 0;
 }
 
+$base-margin: 10vw;
+
 @media print {
     #App {
         background-color: white;
@@ -298,6 +300,25 @@ body {
 
         #top-elements {
             display: none;
+        }
+
+        #internship-reports {
+            margin-left: $base-margin;
+            margin-right: $base-margin;
+        }
+
+        #header {
+            #content {
+                margin-left: $base-margin;
+                margin-right: $base-margin;
+            }
+            h1 {
+                margin-left: $base-margin;
+                margin-right: $base-margin;
+            }
+            h2 {
+                padding-right: 3rems;
+            }
         }
     }
 }
