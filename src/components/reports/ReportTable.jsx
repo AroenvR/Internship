@@ -43,7 +43,7 @@ const ReportTable = (props) => {
     }
 
     return (
-        <div id='report-table'>
+        <div id='report-table' className={`report-table-${props.data.id}`}>
             <table>
                 <tbody>
                     { 

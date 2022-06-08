@@ -70,7 +70,7 @@ const Report = (props) => {
     }
 
     return (
-        <div id='report'>
+        <div id='report' className={`report-${props.data.id}`}>
             { renderSummary() }
 
             { renderFinishedStories() }

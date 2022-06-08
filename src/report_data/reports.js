@@ -7,6 +7,7 @@
 export const reports =
 [
     {
+        id: 0,
         dateString: "21e maart",
         summary: [
             "Gewerkt in de front-end van de Mercator Web Crawler. <br/>Begonnen met een full code overhaul van de website's frontend.",
@@ -47,6 +48,7 @@ export const reports =
     },
 
     {
+        id: 1,
         dateString: "28e maart",
         summary: [
             "Ik heb deze week merendeels zelfstandig gewerkt.",
@@ -90,6 +92,7 @@ export const reports =
     },
 
     {
+        id: 2,
         dateString: "4e april",
         summary: [
             "3 dagen in Parijs voor een korte paasvakantie.",
@@ -125,6 +128,7 @@ export const reports =
     },
 
     {
+        id: 3,
         dateString: "11e april",
         summary: [
             "Nog steeds bezig aan het database onderdeel van PA-13877 (Add hosting data to Mercator WebCrawler).",
@@ -158,6 +162,7 @@ export const reports =
     },
 
     {
+        id: 4,
         dateString: "18e april",
         summary: [
             "Deze week begonnen met een nieuw database model te maken (2nd prototype SQL-script). <br/>Tot nu toe is het tweede script goedgekeurd en hebben we nog geen problemen gevonden.",
@@ -190,6 +195,7 @@ export const reports =
     },
 
     {
+        id: 5,
         dateString: "25e april",
         summary: [
             "Zeer interessante week. <br/>Veel bijgeleerd over Docker containers en aan compleet andere code gewerkt dan ik gewend ben voor WebApps.",
@@ -223,6 +229,7 @@ export const reports =
     },
 
     {
+        id: 6,
         dateString: "2e mei",
         summary: [
             "Mijn aanpassingen van vorige week hadden één kleine, maar impactvolle, fout wat ervoor gezorgd heeft dat de meerderheid van mijn geleverd werk onbruikbaar werd.",
@@ -256,6 +263,7 @@ export const reports =
     },
 
     {
+        id: 7,
         dateString: "9e mei",
         summary: [
             "Deze week heb ik mij terug herpakt door mijn falen van de vorige week optimistisch te bekijken.<br/>Quentin Loos had de tijd genomen om een leerzaam gesprek met mij te hebben, waar hij mij liet weten dat ik ook naar mijn overwinningen moet kijken.",
@@ -288,6 +296,7 @@ export const reports =
     },
 
     {
+        id: 8,
         dateString: "16e mei",
         summary: [
             "PA-15201 (Cluster page) afgewerkt, dit is een feature aangevraagd door Maarten die ik op mijn eentje heb mogen implementeren.",
@@ -316,6 +325,7 @@ export const reports =
     },
 
     {
+        id: 9,
         dateString: "23e mei",
         summary: [
             "Er werdt gevraagd aan mij om DNSSEC-support toe te voegen in de backend van de DNS Crawler.",
@@ -337,6 +347,7 @@ export const reports =
     },
 
     {
+        id: 10,
         dateString: "30e mei",
         summary: [
             "Quentin en Maarten zouden nogmaals in het buitenland zijn voor de meerderheid van mijn laatste week bij DNS Belgium.",
