@@ -291,7 +291,7 @@ export const reports =
         ],
         goals: [
             "Quentin's feedback zal mij bijblijven.",
-            "•	Werken aan het verbeteren van mijn vaardigheden (zie het lijstje hierboven)."
+            "Werken aan het verbeteren van mijn vaardigheden (zie het lijstje hierboven)."
         ]
     },
 
@@ -328,21 +328,17 @@ export const reports =
         id: 9,
         dateString: "23e mei",
         summary: [
-            "Er werdt gevraagd aan mij om DNSSEC-support toe te voegen in de backend van de DNS Crawler.",
-            "Aangezien de DNS Crawler zo efficiënt gemaakt is en ik de frontend zo schaalbaar mogelijk heb geprobeerd te maken was het vrijwel enkel één nieuwe variabele aanmaken per nieuw record type en de nieuwe data werkten meteen in de bestaande infrastructuur.",
-            "Op het RRSIG-record na, deze heeft veel langer geduurd dan we hadden verwacht.<br/>Het RRSIG record type is een digital signature voor andere record types.",
-            "Na twee dagen te zoeken achter waarom ik geen record data ontvangen kreeg vond Quentin dat het met de Docker containers te maken had.",
-            "Daarna heb ik de bestaande code moeten aanpassen om RRSIG data mogelijk te maken voor de DNS Crawler en heb ik er extra unit testen voor geschreven.",
-            "Officieel was dit mijn laatste week bij DNS Belgium maar ik wou graag een extra week presteren."
+            "Er werd aan mij gevraagd om DNSSEC-support toe te voegen aan het DNS Crawler component.",
+            "Aangezien de DNS Crawler zo efficiënt gemaakt is en ik de frontend zo schaalbaar mogelijk heb geprobeerd te maken, was het vrijwel enkel één nieuwe variabele aanmaken per nieuw record type. <br/>De nieuwe data werkte meteen in de bestaande infrastructuur, behalve het RRSIG record type. <br/>Het RRSIG record type is een digital signature voor andere record types.",
+            "Na twee dagen te zoeken waarom ik geen record data ontving voor het RRSIG record, merkte Quentin op dat het met de Docker containers te maken had.",
+            "Voor het RRSIG record hebben we een nieuwe tabel gemaakt in de database, en dus zijn er wat aanpassingen nodig geweest bij de backend. Deze keer heb ik geen cardinaliteit fouten gemaakt. Ik heb ook extra unit testen geschreven voor mijn nieuwe code.",
+            "Officieel was dit mijn laatste week bij DNS Belgium, maar ik wilde graag een extra week presteren."
         ],
         finished: [
-            "PA-15024 (Add DNSSEC to DNS Crawler)"
-        ],
-        good: [
-            ""
+            "PA-15024 (Add DNSSEC data to crawler)"
         ],
         learned: [
-            "Ik heb veel bijgeleerd van hoe de security van een Domain Name System ik elkaar zit.<br/>CyberSec vind ik een zeer interessant onderwerp."
+            "Ik heb veel bijgeleerd van hoe de security van een Domain Name System in elkaar zit.<br/>CyberSec vind ik een zeer interessant onderwerp."
         ],
     },
 
@@ -350,17 +346,17 @@ export const reports =
         id: 10,
         dateString: "30e mei",
         summary: [
-            "Quentin en Maarten zouden nogmaals in het buitenland zijn voor de meerderheid van mijn laatste week bij DNS Belgium.",
-            "Quentin en ik hebben een kort gesprekje gehad in de avond van vrijdag 27/05 op Slack.<br/>Na wat overleg voor waar ik het beste aan zou kunnen werken voor de volgende week vroeg hij of ik geïnteresseerd was om testen te schrijven voor de frontend.",
-            "Ik was zeer blij dat hij mij dit had gevraagd aangezien ik het in de zomervakantie in mijn vrije tijd wou onderzoeken.<br/>Nadat hij akkoord was dat het mogelijks een fruit loos project zou kunnen zijn voor mijn laatste week ben ik op YouTube gaan zoeken voor wat React Testing Tutorials.",
-            "Mijn laatste week bij DNS was oprecht de week waar ik het meeste heb geleerd.<br/>Ik heb een helemaal nieuwe hard skill kunnen ontwikkelen: unit, integration en end-to-end tests maken voor frontend.",
-            "Ik heb mijn best gedaan om de testen zo duidelijk mogelijk te maken zodat de volgende persoon dat ze overneemt het gemakkelijker zal hebben om eraan te kunnen beginnen en ze uit te breiden.",
-            "In de spirit van testen schrijven heb ik op mijn laatste dag van mijn stage nog wat testen geschreven voor backend functionaliteiten dat ik doorheen mijn stage heb aan gewerkt.",
-            "Quentin was zeer tevreden met mijn opgeleverd werk, alhoewel hij meteen de feedback gaf dat ik met minder had kunnen hardcoden.",
-            "Daarnaast heb ik interviews gehad met het personeel van DNS om meer gepersonaliseerde informatie te kunnen verzamelen voor mijn eindverslag maar ik heb veel meer ontvangen van de werknemers dan ik had verwacht.",
-            "Dankzij hun interviews heb ik de werking van DNS kunnen verstaan. Als iemand komend van de horeca heb ik nooit gekeken naar de visie van een bedrijf. Dat was nooit belangrijk.<br/>De interviews hebben mij geleerd dat dit iets zeer belangrijk is.",
-            "Tijdens mijn laatste gesprek met Quentin heeft hij mij met eerlijkheid laten weten dat DNS Belgium geen goede werklplaats is voor een Junior maar dat hij gelooft dat ik wel een plaats in het team zou kunnen hebben als ik een betere programmeur ben.",
-            "Ik hoop oprecht dat als ik mijn plaatsje nog niet heb gevonden dat DNS Belgium mij binnen 3 jaren zal verwelkomen met open armen."
+            "Quentin en Maarten zijn niet aanwezig geweest voor de meerderheid van mijn laatste week bij DNS Belgium.",
+            "Quentin en ik hebben een kort gesprekje gehad op vrijdagavond 27/05 via Slack.<br/>Nadat we overlegd hadden waar ik het beste aan zou kunnen werken tijdens mijn laatste week, vroeg hij of ik geïnteresseerd was om testen te schrijven voor de frontend.",
+            "Ik was zeer blij dat hij mij dit had gevraagd, aangezien ik de ambitie had dit in de zomervakantie in mijn vrije tijd te onderzoeken. <br/>Nadat hij akkoord was dat ik mogelijks geen resultaten zou hebben tegen het einde van mijn laatste week, ben ik meteen op YouTube gaan zoeken voor wat React Testing Tutorials.",
+            "Mijn laatste week bij DNS was oprecht de week waarin ik het meeste heb geleerd. <br/>Ik heb een helemaal nieuwe hard skill kunnen ontwikkelen: unit, integration en end-to-end tests voor frontend.",
+            "Ik heb mijn best gedaan om de testen zo duidelijk mogelijk te maken, zodat de volgende developer die ze overneemt het gemakkelijker zal hebben om eraan te kunnen beginnen en ze uit te breiden.",
+            "In de spirit van testen schrijven, heb ik op mijn laatste dag van mijn stage nog wat testen geschreven voor backend functionaliteiten waar ik doorheen mijn stage aan heb gewerkt. <br/>Als laaste vriendelijk gebaar heb ik de README.md van de DNS Crawler aangepast. Quentin en Maarten waren zeer tevreden toen ze de nieuwe readme lazen.",
+            "Quentin was tevreden met mijn opgeleverd werk voor de nieuwe frontend tests, alhoewel hij meteen de feedback gaf dat ik minder had kunnen hardcoden.",
+            "Daarnaast heb ik interviews gehad met het personeel van DNS, om meer gepersonaliseerde informatie te kunnen verzamelen voor mijn eindverslag. Ik heb veel meer ontvangen van de werknemers dan ik had verwacht.",
+            "Dankzij hun interviews heb ik de werking van DNS beter kunnnen begrijpen. Komend van de horeca, heb ik nooit gekeken naar de visie van een bedrijf. Dat was nooit belangrijk.<br/>De interviews hebben mij geleerd dat dit iets zeer belangrijks is.",
+            "Tijdens mijn laatste gesprek met Quentin, heeft hij mij in eerlijkheid laten weten dat DNS Belgium geen goede werkplaats is voor een Junior. Aan de andere kant gelooft hij wel dat ik een plaats in het team zou kunnen hebben wanneer ik een betere programmeur ben geworden.",
+            "Ik hoop oprecht dat als ik na 3 jaar nog geen job waar ik mij goed voel heb gevonden, dat DNS Belgium mij zal verwelkomen met open armen."
         ],
         finished: [
             "PA-15280 (Frontend tests)"
@@ -369,12 +365,12 @@ export const reports =
             "Geen. Einde stage."
         ],
         good: [
+            "Het uitzoeken van hoe een nieuwe library of framework werkt.",
             "Een leerzame laatste week, ik ben enorm dankbaar dat DNS Belgium mij al deze kansen heeft gegeven om te kunnen groeien.",
-            "Het uitzoeken van hoe een nieuwe library of framework werkt."
         ],
         learned: [
-            "Hoe ik unit, integration en end to end tests kan maken voor de frontend.",
-            "Soft skill stuf?"
+            "Hoe ik unit, integration en end-to-end tests kan maken voor de frontend.",
+            "Hoe de visie van een bedrijf de werkplaats kan beïnvloeden."
         ],
         extra: [
             "Libraries / Frameworks used for creating frontend tests:",

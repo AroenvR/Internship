@@ -21,24 +21,24 @@ function App() {
 
   useEffect(() => {
     
-    const callSmartContract = async () => {
+    // const callSmartContract = async () => {
 
-      try {
-        const contractAddress = reportData["deployment"]["address"];
-        const contractABI = reportData["abi"];
+      // try {
+      //   const contractAddress = reportData["deployment"]["address"];
+      //   const contractABI = reportData["abi"];
         
-        const web3Provider = new ethers.providers.Web3Provider(window.ethereum);
-        const reportDataContract = new ethers.Contract(contractAddress, contractABI, web3Provider);
+      //   const web3Provider = new ethers.providers.Web3Provider(window.ethereum);
+      //   const reportDataContract = new ethers.Contract(contractAddress, contractABI, web3Provider);
 
-        const reply = await reportDataContract.viewReports();
+      //   const reply = await reportDataContract.viewReports();
 
-        setData(reply);
-      } catch (ex) {
+      //   setData(reply);
+      // } catch (ex) {
         setData(reports)
-      }
-    }
+      // }
+    // }
 
-    callSmartContract();
+    // callSmartContract();
 
   }, []);
 
