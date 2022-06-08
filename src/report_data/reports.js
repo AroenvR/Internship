@@ -84,7 +84,7 @@ export const reports =
             "Te beginnen aan een nieuw onderdeel van de Web Crawler en PA-14912 (add paging, zelfgemaakte en goedgekeurde story) te maken. <br/>Voor PA-14912 moet ik in beide de backend en front-end code leren dat ik nog niet ken."
         ],
         extra: [
-            "Hoe ik PA-14911 (speed up search results) heb aangepakt: <br/><br/>De vorige front-end developer deed 2 verschillende API-calls voor data in een HTML-table te tonen. <br/><br/>De tabel moet de volgende elementen bevatten: VisitId, TimeStamp, FinalUrl, 4 booleans. <br/><br/>Er werd 1 call gedaan om een lijst van VisitId’s, TimeStamps en FinalUrls te verkrijgen. <br/>De FinalUrl was foutieve data. <br/><br/>Daarna werd een reeks API calls gedaan naar de backend met een foreach VisitId get 4 booleans, 1 at a time. <br/><br/>Ik heb het aangepast zodat de front-end maar 1 call doet en dan een lijst van DTO’s ontvangt. <br/><br/>Iedere DTO bevat: VisitId, TimeStamp, (juiste) FinalUrl en alle 4 booleans. <br/><br/>Dit veroorzaakt een drastische vermindering in internet traffic, wat hopelijk zorgt voor versnelling. <br/>(Review and deploy pending).", 
+            "Hoe ik PA-14911 (speed up search results) heb aangepakt: <br/><br/>De vorige front-end developer deed 2 verschillende API-calls voor data in een HTML-table te tonen. <br/><br/>De tabel moet de volgende elementen bevatten: VisitId, TimeStamp, FinalUrl, 4 booleans. <br/><br/>Er werd 1 call gedaan om een lijst van VisitId’s, TimeStamps en FinalUrls te verkrijgen. <br/>De FinalUrl was foutieve data. <br/><br/>Daarna werd een reeks API calls gedaan naar de backend met een foreach VisitId get 4 booleans, 1 at a time. <br/><br/>Ik heb het aangepast zodat de front-end maar 1 call doet en dan een lijst van DTO's ontvangt. <br/><br/>Iedere DTO bevat: VisitId, TimeStamp, (juiste) FinalUrl en alle 4 booleans. <br/><br/>Dit veroorzaakt een drastische vermindering in internet traffic, wat hopelijk zorgt voor versnelling. <br/>(Review and deploy pending).", 
             "Ik kijk uit naar de resultaten van mijn aanpassingen. <br/>Toekomstige uitbreiding voor nog meer versnelling is een paginering system (PA-14912) via gebruik van Spring Paging."
         ]
     },
@@ -107,7 +107,7 @@ export const reports =
             "PA-14912 sneller opgelost dan verwacht."
         ],
         learned: [
-            "Spring Data’s Paging API."
+            "Spring Data's Paging API."
         ],
         targets: [
             "Zo veel mogelijk van PA-13877 afwerken."
@@ -120,7 +120,7 @@ export const reports =
         ],
         extra: [
             "PA-14911 (speed up search results) is inmiddels deployed op production en de results zijn nu binnen één seconde geladen.",
-            "If you don’t know Hans Zimmer, check out his music. <br/>You’ve probably already heard a lot of his music without realizing. <br/>You won’t regret it."
+            "If you don't know Hans Zimmer, check out his music. <br/>You've probably already heard a lot of his music without realizing. <br/>You won't regret it."
         ]
     },
 
@@ -169,7 +169,7 @@ export const reports =
             "PA-14955 (Database onderdeel van PA-13877), onder voorbehoud.",
         ],
         good: [
-            "Geen echte problemen gehad deze week, dus de week in z’n geheel is goed gegaan."
+            "Geen echte problemen gehad deze week, dus de week in z'n geheel is goed gegaan."
         ],
         learned: [
             "Ik heb ondervonden dat ik toch meer plezier vind in frontend dan backend. <br/>Dit vond ik interessant want ik dacht altijd dat frontend niets voor mij zou zijn."
@@ -220,7 +220,186 @@ export const reports =
         extra: [
             "DnsCrawlDTO constructie: <br/>https://github.com/AroenvR/Internship-Code/tree/master/crawlDto_construction"
         ],
-    }
+    },
+
+    {
+        dateString: "2e mei",
+        summary: [
+            "Mijn aanpassingen van vorige week hadden één kleine, maar impactvolle, fout wat ervoor gezorgd heeft dat de meerderheid van mijn geleverd werk onbruikbaar werd.",
+            "Dit was wel vrij zwaar voor mij om te horen en te zien, maar ik heb het als een leerproces gezien.",
+            "Wat ik verkeerd had gedaan was het feit dat ik de aanpassingen aan de backend voor het nieuwe database model heb aangepakt met een ManyToOne JPA verwerking, wat ervoor zorgde dat ik 3 repository interfaces had gemaakt.",
+            "Als ik met een OneToMany had gewerkt, dan is er maar 1 repository interface nodig dat aan alle 3 objecten kan via hun foreign key relaties.<br/>Een kleine, maar impactvolle fout.",
+            "Zo heb ik echter wel geleerd hoe een kleine efficiëntie-aanpassing een zeer grote impact kan hebben op een eindresultaat.",
+            "Nadat die aanpassing doorgevoerd was door Quentin, heb ik de frontend aangepast.<br/>Terwijl ik in de frontend bezig was, heb ik nog een quality of life aanpassing toegevoegd die routing tussen de onderdelen van de frontend heeft verbeterd.",
+            "Volgende week begin ik aan resterende onderdeeltjes up-to-date te brengen, en mogelijks aan een nieuwe feature voor Mercator.",
+            "Ik heb deze week ook een sollicitatiegesprek gehad, waarop ik zeer slecht heb gepresteerd."
+        ],
+        finished: [
+            "PA-13877 (Store hosting data)",
+            "PA-15153 (Improve UI routing)"
+        ],
+        learned: [
+            "Hoe impactvol kleine aanpassingen kunnen zijn.",
+            "Meer geleerd over de JPA en Lombok libraries van Spring."
+        ],
+        targets: [
+            "Bruikbare code schrijven."
+        ],
+        goals: [
+            "PA-13877 afwerken."
+        ],
+        problems: [
+            "Zware, maar leerzame week.",
+            "Slecht gepresteerd op beide mijn stage en sollicitatiegesprek.",
+            "Mentaal een onbevredigende week maar ik ben wel dankbaar voor de belangrijke lessen die ik heb gehad."
+        ]
+    },
+
+    {
+        dateString: "9e mei",
+        summary: [
+            "Deze week heb ik mij terug herpakt door mijn falen van de vorige week optimistisch te bekijken.<br/>Quentin Loos had de tijd genomen om een leerzaam gesprek met mij te hebben, waar hij mij liet weten dat ik ook naar mijn overwinningen moet kijken.",
+            "Vorige week was er een retro-meeting met het engineering team, waar ik heb beseft dat ik te veel aan het focussen ben op quantity in plaats van quality.<br/>Dit voelt verkeerd, aangezien ik normaal gezien iemand ben die liever quality over quantity oplevert.<br/>Na het overleg met Quentin Loos ben ik gaan inzien dat het zeker geen probleem is dat ik wat trager werk, zodat ik meer kwaliteit kan leveren. Het kan mij tenslotte meer tijd besparen op de lange termijn.",
+            "Evaluatiegesprek met Quentin Loos, key points:",
+            "Goede soft skill kwaliteiten:<br/>-   Good integration with the team.<br/>-   Good participation in team events.<br/>-   Overall good communication (improvable).<br/>-   Good attitude / work ethic.<br/>-   Likes to take on challenges.",
+            "Goede hard skill kwaliteiten:<br/>-   No security risks.<br/>-   Overall good code documentation (improvable).<br/>-   Overall good speed and quality of code (improvable).",
+            "Skills I personally think I can improve on, based on Quentin's feedback:<br/>-   Less redundant code documentation -> sometimes I write too much documentation.<br/>-   Reduce speed of code, increase quality of code -> think of more 'edge cases' before I deploy.<br/>-   Be more assertive -> have more confidence in giving proposals.<br/>-   Focus less on my failures -> realize them, learn from them, appreciate them. Dont let it get me down.<br/>-   Appreciate my successes more -> I tend to forget them.<br/>-   Organize priorities -> I tend to want to fix mentioned problems asap.<br/>-   Less redundant communication -> research more before asking questions.<br/>                                                              -> when asked a question, be certain of an answer before I give it."
+        ],
+        finished: [
+            "PA-14665 (Add thumbnail images to Timeline search table)"
+        ],
+        started: [
+            "PA-15201 (Create Cluster Validation page, back & frontend)"
+        ],
+        good: [
+            "Over het algemeen een goede week gehad.",
+            "Gesprek met Quentin Loos was bevredigend en mijn nieuwe stories voor Mercator zijn goed op weg."
+        ],
+        learned: [
+            "Alhoewel het gezond is om mijn falen goed te beseffen, mag ik mijn overwinningen niet vergeten."
+        ],
+        targets: [
+            "Nieuwe story afmaken met zo min mogelijk bugs.<br/>Ik ga extra tijd investeren in bugs opsporen vooraleer ik het deploy."
+        ],
+        goals: [
+            "Quentin's feedback zal mij bijblijven.",
+            "•	Werken aan het verbeteren van mijn vaardigheden (zie het lijstje hierboven)."
+        ]
+    },
+
+    {
+        dateString: "16e mei",
+        summary: [
+            "PA-15201 (Cluster page) afgewerkt, dit is een feature aangevraagd door Maarten die ik op mijn eentje heb mogen implementeren.",
+            "Meerdere aanpassingen in het DNS Crawler component van Mercator mogen uitvoeren, waaronder support voor meer DNS Records, alsook wat andere database en backend aanpassingen.",
+            "Ik heb ook nog een eigen proposal mogen uitvoeren op de frontend, PA-15220 (Make NavBar scalable).",
+            "Ik was aangenaam verast dat mijn stagementors mij een relatieve hoeveelheid verantwoordelijkheid hebben gegeven, aangezien ik op mijn vorige challenge niet zo goed had gepresteerd.",
+            "Op vrijdag was ik uitgenodigd, samen met mijn vriendin, om bij Restaurant Arenberg te dineren met de collega's van DNS Belgium."
+        ],
+        finished: [
+            "PA-15200 (Add new data to Request)",
+            "PA-15201 (Cluster page)",
+            "PA-15220 (Make NavBar scalable)"
+        ],
+        started: [
+            "PA-15204 (Add DNSSEC to DNS Crawler)"
+        ],
+        good: [
+            "Ik heb ervan genoten om PA-15201 toe te voegen aan de Crawler."
+        ],
+        learned: [
+            "Voor PA-15204 heb ik vrij veel research moeten doen op DNS Records, om zeker te zijn dat mijn implementaties correct waren."
+        ],
+        lookingForward: [
+            "PA-15204 verder uit te werken."
+        ]
+    },
+
+    {
+        dateString: "23e mei",
+        summary: [
+            "Er werdt gevraagd aan mij om DNSSEC-support toe te voegen in de backend van de DNS Crawler.",
+            "Aangezien de DNS Crawler zo efficiënt gemaakt is en ik de frontend zo schaalbaar mogelijk heb geprobeerd te maken was het vrijwel enkel één nieuwe variabele aanmaken per nieuw record type en de nieuwe data werkten meteen in de bestaande infrastructuur.",
+            "Op het RRSIG-record na, deze heeft veel langer geduurd dan we hadden verwacht.<br/>Het RRSIG record type is een digital signature voor andere record types.",
+            "Na twee dagen te zoeken achter waarom ik geen record data ontvangen kreeg vond Quentin dat het met de Docker containers te maken had.",
+            "Daarna heb ik de bestaande code moeten aanpassen om RRSIG data mogelijk te maken voor de DNS Crawler en heb ik er extra unit testen voor geschreven.",
+            "Officieel was dit mijn laatste week bij DNS Belgium maar ik wou graag een extra week presteren."
+        ],
+        finished: [
+            "PA-15024 (Add DNSSEC to DNS Crawler)"
+        ],
+        good: [
+            ""
+        ],
+        learned: [
+            "Ik heb veel bijgeleerd van hoe de security van een Domain Name System ik elkaar zit.<br/>CyberSec vind ik een zeer interessant onderwerp."
+        ],
+    },
+
+    {
+        dateString: "30e mei",
+        summary: [
+            "Quentin en Maarten zouden nogmaals in het buitenland zijn voor de meerderheid van mijn laatste week bij DNS Belgium.",
+            "Quentin en ik hebben een kort gesprekje gehad in de avond van vrijdag 27/05 op Slack.<br/>Na wat overleg voor waar ik het beste aan zou kunnen werken voor de volgende week vroeg hij of ik geïnteresseerd was om testen te schrijven voor de frontend.",
+            "Ik was zeer blij dat hij mij dit had gevraagd aangezien ik het in de zomervakantie in mijn vrije tijd wou onderzoeken.<br/>Nadat hij akkoord was dat het mogelijks een fruit loos project zou kunnen zijn voor mijn laatste week ben ik op YouTube gaan zoeken voor wat React Testing Tutorials.",
+            "Mijn laatste week bij DNS was oprecht de week waar ik het meeste heb geleerd.<br/>Ik heb een helemaal nieuwe hard skill kunnen ontwikkelen: unit, integration en end-to-end tests maken voor frontend.",
+            "Ik heb mijn best gedaan om de testen zo duidelijk mogelijk te maken zodat de volgende persoon dat ze overneemt het gemakkelijker zal hebben om eraan te kunnen beginnen en ze uit te breiden.",
+            "In de spirit van testen schrijven heb ik op mijn laatste dag van mijn stage nog wat testen geschreven voor backend functionaliteiten dat ik doorheen mijn stage heb aan gewerkt.",
+            "Quentin was zeer tevreden met mijn opgeleverd werk, alhoewel hij meteen de feedback gaf dat ik met minder had kunnen hardcoden.",
+            "Daarnaast heb ik interviews gehad met het personeel van DNS om meer gepersonaliseerde informatie te kunnen verzamelen voor mijn eindverslag maar ik heb veel meer ontvangen van de werknemers dan ik had verwacht.",
+            "Dankzij hun interviews heb ik de werking van DNS kunnen verstaan. Als iemand komend van de horeca heb ik nooit gekeken naar de visie van een bedrijf. Dat was nooit belangrijk.<br/>De interviews hebben mij geleerd dat dit iets zeer belangrijk is.",
+            "Tijdens mijn laatste gesprek met Quentin heeft hij mij met eerlijkheid laten weten dat DNS Belgium geen goede werklplaats is voor een Junior maar dat hij gelooft dat ik wel een plaats in het team zou kunnen hebben als ik een betere programmeur ben.",
+            "Ik hoop oprecht dat als ik mijn plaatsje nog niet heb gevonden dat DNS Belgium mij binnen 3 jaren zal verwelkomen met open armen."
+        ],
+        finished: [
+            "PA-15280 (Frontend tests)"
+        ],
+        started: [
+            "Geen. Einde stage."
+        ],
+        good: [
+            "Een leerzame laatste week, ik ben enorm dankbaar dat DNS Belgium mij al deze kansen heeft gegeven om te kunnen groeien.",
+            "Het uitzoeken van hoe een nieuwe library of framework werkt."
+        ],
+        learned: [
+            "Hoe ik unit, integration en end to end tests kan maken voor de frontend.",
+            "Soft skill stuf?"
+        ],
+        extra: [
+            "Libraries / Frameworks used for creating frontend tests:",
+            "Cypress (https://docs.cypress.io/) <br/>Open source For setting up, writing, executing and debugging e2e tests. <br/>Operates with a Node server for realistic application events. <br/>Native access to window, document & DOM. <br/>Ability to execute Terminal commands. Easily mock user input. <br/>One of the most popular automated testing tools for frontend.",
+            "Jest (https://jestjs.io/) <br/>Maintained by Facebook. <br/>Widely adopted for unit tests. <br/>Comes pre-installed with new React Apps.",
+            "React Testing Library (https://testing-library.com/docs/react-testing-library/intro/) <br/>Open source. <br/>Widely adopted with over 6m weekly downloads. <br/>For simulating user behaviour. <br/>Comes with the installation of react-dom."
+        ]
+    },
 ]
 
 export const amtOfReports = reports.length;
+
+/*
+
+{
+        dateString: "",
+        summary: [
+        ],
+        finished: [
+        ],
+        started: [
+        ],
+        good: [
+        ],
+        learned: [
+        ],
+        targets: [
+        ],
+        goals: [
+        ],
+        problems: [
+        ],
+        lookingForward: [
+        ],
+        extra: [
+        ]
+    },
+
+*/
