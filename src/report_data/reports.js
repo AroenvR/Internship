@@ -360,7 +360,7 @@ export const reports =
             "Geen. Einde stage."
         ],
         good: [
-            "Het uitzoeken van hoe een nieuwe library of framework werkt.",
+            "Het uitzoeken van nieuwe technologiën.",
             "Een leerzame laatste week, ik ben enorm dankbaar dat DNS Belgium mij al deze kansen heeft gegeven om te kunnen groeien.",
         ],
         learned: [
