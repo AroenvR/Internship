@@ -43,7 +43,7 @@ export const reports =
         ],
         extra: [
             "Een zeer interessante eerste week, waar ik direct lessen kreeg over hoe een DNS werkt.",
-            "Om de ternaire functies en mijn oplossingen te zien: <br/>https://github.com/AroenvR/Internship-Code/tree/master/difficult_ternaries"
+            "Om de ternaire functies en mijn oplossingen te zien: <br/>https://github.com/AroenvR/internship-code/tree/master/difficult_ternaries"
         ]
     },
 
@@ -157,7 +157,7 @@ export const reports =
             "Een van mijn slechtere punten te kunnen beoefenen."
         ],
         extra: [
-            "SQL Scripts: https://github.com/AroenvR/Internship-Code/tree/master/sql_scripts"
+            "SQL Scripts: https://github.com/AroenvR/internship-code/tree/master/sql_scripts"
         ],
     },
 
@@ -190,7 +190,7 @@ export const reports =
             "Nog eens te kunnen lunchen met mijn collega student Dulce. <br/>Zij is al eventjes niet meer naar het kantoor kunnen komen, maar volgende week zou ze er terug moeten zijn."
         ],
         extra: [
-            "SQL Scripts: https://github.com/AroenvR/Internship-Code/tree/master/sql_scripts"
+            "SQL Scripts: https://github.com/AroenvR/internship-code/tree/master/sql_scripts"
         ],
     },
 
@@ -201,8 +201,7 @@ export const reports =
             "Zeer interessante week. <br/>Veel bijgeleerd over Docker containers en aan compleet andere code gewerkt dan ik gewend ben voor WebApps.",
             "Nadat het database model goed gekeurd was en geen problemen meer had, heb ik een paar dagen gewerkt aan de crawl service (van crawl naar nieuw database model).",
             "Voor zeker te zijn dat ik geen grote bugs heb gecreërd, heb ik een paar dagen geïnvesteerd in het maken van Unit en Integration tests voor de nieuwe repositories en aangepaste crawl service.",
-            "Zodra de crawl service en zijn tests af waren, was de rest vrijwel meteen opgelost aangezien ik dan nog enkel van repo to frontend moest maken. <br/>Dit is iets dat zeer comfortabel is voor mij om te maken.",
-            "Voor de nieuwe crawl data naar de frontend te sturen, heb ik een interessante DTO constructie gemaakt met meerdere nested maps, zodat er weinig aanpassing nodig was in de frontend code. <br/>Ik had het bekeken als een 'coding challenge', dus daar heb ik wel van genoten."
+            "Zodra de crawl service en zijn tests af waren, was de rest vrijwel meteen opgelost aangezien ik dan nog enkel van repo to frontend moest maken. <br/>Dit is iets dat zeer comfortabel is voor mij om te maken."
         ],
         finished: [
             "PA-14955 (Create better datamodel)"
@@ -222,10 +221,7 @@ export const reports =
         ],
         lookingForward: [
             "Verder werken aan de hosting data story."
-        ],
-        extra: [
-            "DnsCrawlDTO constructie: <br/>https://github.com/AroenvR/Internship-Code/tree/master/crawlDto_construction"
-        ],
+        ]
     },
 
     {
