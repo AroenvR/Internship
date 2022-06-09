@@ -342,7 +342,6 @@ export const reports =
         id: 10,
         dateString: "30e mei",
         summary: [
-            "Quentin en Maarten zijn niet aanwezig geweest voor de meerderheid van mijn laatste week bij DNS Belgium.",
             "Quentin en ik hebben een kort gesprekje gehad op vrijdagavond 27/05 via Slack.<br/>Nadat we overlegd hadden waar ik het beste aan zou kunnen werken tijdens mijn laatste week, vroeg hij of ik geïnteresseerd was om testen te schrijven voor de frontend.",
             "Ik was zeer blij dat hij mij dit had gevraagd, aangezien ik de ambitie had dit in de zomervakantie in mijn vrije tijd te onderzoeken. <br/>Nadat hij akkoord was dat ik mogelijks geen resultaten zou hebben tegen het einde van mijn laatste week, ben ik meteen op YouTube gaan zoeken voor wat React Testing Tutorials.",
             "Mijn laatste week bij DNS was oprecht de week waarin ik het meeste heb geleerd. <br/>Ik heb een helemaal nieuwe hard skill kunnen ontwikkelen: unit, integration en end-to-end tests voor frontend.",
